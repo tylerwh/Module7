@@ -1,5 +1,6 @@
 """
 Author: Tyler Hochstetler
+This program is to practice the use lists as well as mock with patch() in test_basic_list.py
 """
 
 
@@ -36,3 +37,14 @@ def get_input():
 if __name__ == "__main__":
     make_a_list = make_list()
     print(make_a_list)
+
+
+#       input             expected                   actual
+#     5, 5, 5             [5, 5, 5]                  [5, 5, 5]                 
+#     1, 2, 3             [1, 2, 3]                  [1, 2, 3]
+#     a, 2, 3          raise ValueError          raise ValueError
+#     1, a, 3          raise ValueError          raise ValueError
+#     1, 2, a          raise ValueError          raise ValueError
+#   1.2, 3, 4.6           [1, 3, 5]              raise ValueError # Can't cast a float-type string literal to an int.
+                                                                  # Would need to cast to float before int, but I'm satisfied
+                                                                  # with the ValueError for this assignment
