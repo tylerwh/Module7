@@ -12,6 +12,13 @@ def sort_list(list_to_sort):
 
 def search_list(list_to_search, element_to_search_for):
   """Returns the index of the object in the list, or -1 for item not found"""
+  try:
+    index_to_return = list_to_search.index(element_to_search_for)
+    return index_to_return
+  except (ValueError, AssertionError):
+    print("Element not found in list.")
+    return -1
+  
   pass
 
 
