@@ -15,5 +15,10 @@ class TestSearchAndSort(unittest.TestCase):
     self.assertEqual(s_and_s.search_list(['a', 'b', 'c'], 'd'), -1)
 
 
+  def test_sort_list(self):
+    list_to_sort = ['Bob', 'Cat', 'Alfred']
+    self.assertEqual(s_and_s.sort_list(list_to_sort), ['Alfred', 'Bob', 'Cat'])
+
+
 if __name__ == "__main__":
   unittest.main()
