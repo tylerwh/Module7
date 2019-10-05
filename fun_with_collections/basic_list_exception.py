@@ -15,7 +15,10 @@ def make_list():
   try:
     for i in range(0, 3):
       num = int(get_input())
-      user_list.append(num)
+      if 1 <= num <= 50:
+       user_list.append(num)
+      else: 
+        raise ValueError
     return user_list
   except ValueError:
     print("You done messed up.. Need an int")
