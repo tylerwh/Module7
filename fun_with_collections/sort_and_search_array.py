@@ -6,8 +6,11 @@ import array as arr
 
 
 def sort_array(array_to_sort):
-  """Will sort the list and return the sorted list"""
-  pass
+  """Will sort the list and return the sorted list
+  :return: Returns sorted array in ascending order
+  """
+  # print(sorted(array_to_sort))
+  return sorted(array_to_sort)
 
 
 def search_array(array_to_search, element_to_search):
